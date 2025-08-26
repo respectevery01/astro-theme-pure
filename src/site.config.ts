@@ -116,7 +116,7 @@ export const integ: IntegrationUserConfig = {
     applyTip: [
       { name: 'Name', val: theme.title },
       { name: 'Desc', val: theme.description || 'Web3 is a dark forest. Stay vigilant and passionate' },
-      { name: 'Link', val: 'https://jask.cc' },
+      { name: 'Link', val: 'https://wyt.icu' },
       { name: 'Avatar', val: 'https://www.jask.cc/avatar/avatar.jpg' }
     ]
   },

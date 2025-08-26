@@ -11,12 +11,12 @@ import KeyIcon from '@/assets/icons/key.svg'
 import wechat from '@/assets/wechat-qrcode.jpg'
 
 const headings = [
-  { depth: 2, slug: 'theme', text: 'Theme' },
-  { depth: 2, slug: 'programs', text: 'Programs' },
-  { depth: 2, slug: 'learnings', text: 'Learnings' },
-  { depth: 2, slug: 'others', text: 'Others' },
-  { depth: 2, slug: 'gpg-signature', text: 'GPG Signature' },
-  { depth: 2, slug: 'sponsorship', text: 'Sponsorship' }
+  { depth: 2, slug: 'homepage', text: 'HomePage' },
+  { depth: 2, slug: 'write', text: 'Write' },
+  // { depth: 2, slug: 'learnings', text: 'Learnings' },
+  // { depth: 2, slug: 'others', text: 'Others' },
+  // { depth: 2, slug: 'gpg-signature', text: 'GPG Signature' },
+  // { depth: 2, slug: 'sponsorship', text: 'Sponsorship' }
 ]
 ---
 
@@ -24,65 +24,53 @@ const headings = [
   <p>Github Activities:</p>
   <p>
     <Image
-      src='https://ghchart.rshah.org/659eb9/cworld1'
+      src='https://ghchart.rshah.org/respectevery01'
       alt='github activities'
       inferSize
       loading='lazy'
     />
   </p>
   <p>
-    If you think it would be useful or interesting to collaborate on a project, you can donate to
-    support my work or contact me to discuss a project.
+    I'm not a professional programmer. This is just my blog submission record
   </p>
-  <Button title='Checkout sponsorship' class='w-fit' href='#sponsorship'>
+  <!-- <Button title='Checkout sponsorship' class='w-fit' href='#sponsorship'>
     <Icon class='size-5' name='receive-money' slot='before' />
-  </Button>
+  </Button> -->
 
-  <h2 id='theme'>Theme</h2>
+  <h2 id='homepage'>HomePage</h2>
   <ProjectSection
     projects={[
       {
-        name: '🍭 Astro-theme-pure',
-        description: 'A simple, clean but powerful blog theme build by astro.',
+        name: 'HomePage',
+        description: 'You can find all my social link here',
         links: [
-          { type: 'github', href: 'https://github.com/cworld1/astro-theme-pure' },
-          { type: 'site', href: 'https://github.com/cworld1/astro-theme-pure' },
-          {
-            type: 'doc',
-            href: 'https://github.com/cworld1/astro-theme-pure/blob/main/src/content/blog/customize/index.md'
-          }
+          { type: 'site', href: 'https://jask.cc' },
         ]
       }
     ]}
   />
 
-  <h2 id='programs'>Programs</h2>
+  <h2 id='write'>Write</h2>
   <ProjectSection
     projects={[
       {
-        name: '📒 Notie',
+        name: '链周志',
         description:
-          'Android note App complies with Material You specifications, developed using Java',
+          'Blockchain Weekly, sharing weekly information on blockchain',
         links: [
-          { type: 'github', href: 'https://github.com/cworld1/notie' },
-          {
-            type: 'release',
-            href: 'https://github.com/cworld1/notie/releases'
-          }
+          { type: 'site', href: 'https://weekly.jask.cc' },
         ]
       },
       {
-        name: '💄 PKU Art',
-        description: 'A script to beautify pku course website',
+        name: 'Web3Briefs',
+        description: 'My on-chain archive',
         links: [
-          { type: 'github', href: 'https://github.com/zhuozhiyongde/pku-art' },
-          { type: 'site', href: 'https://github.com/zhuozhiyongde/pku-art' },
-          { type: 'doc', href: 'https://docs.arthals.ink/docs/pku-art' }
+          { type: 'site', href: 'https://web3.jask.cc' },
         ]
       }
     ]}
   />
-  <Collapse title='Some old projects'>
+  <!-- <Collapse title='Some old projects'>
     <ProjectSection
       projects={[
         {
@@ -100,9 +88,9 @@ const headings = [
         }
       ]}
     />
-  </Collapse>
+  </Collapse> -->
 
-  <h2 id='learnings'>Learnings</h2>
+  <!-- <h2 id='learnings'>Learnings</h2>
   <ProjectSection
     class='my-2'
     projects={[
@@ -138,9 +126,9 @@ const headings = [
         links: [{ type: 'github', href: 'https://github.com/zhuozhiyongde' }]
       }
     ]}
-  />
+  /> -->
 
-  <!-- gpg signature -->
+  <!-- gpg signature
   <h2 id='gpg-signature'>GPG Signature</h2>
   <p>
     You can verify the authenticity of the files I signed by checking the GPG signature. My GPG key
@@ -148,10 +136,10 @@ const headings = [
   </p>
   <Button href='https://keys.openpgp.org/search?q=114514' title='Checkout my key' target='_blank'>
     <KeyIcon class='size-5' slot='before' />
-  </Button>
+  </Button> -->
 
   <!-- sponsorship -->
-  <h2 id='sponsorship'>Sponsorship</h2>
+  <!-- <h2 id='sponsorship'>Sponsorship</h2>
   <p>Please leave a message or contact me proactively after sponsorship.</p>
   <Sponsorship
     methods={[
@@ -168,7 +156,7 @@ const headings = [
       { name: 'Anonymous', amount: '20.00', date: '2022-04-06' }
     ]}
   />
-</PageLayout>
+</PageLayout> -->
 
 <style>
   .sponsorship-card {

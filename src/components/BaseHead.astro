@@ -15,8 +15,8 @@ const socialImageURL = new URL(ogImage ? ogImage : '/images/social-card.png', As
 ---
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WGCVVEYWGY"></script>
-<script>
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-WGCVVEYWGY"></script>
+<script is:inline>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
